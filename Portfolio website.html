@@ -257,7 +257,6 @@ section#about {
   #aboutText,
     #aboutTextSpanish,
     #aboutTextFrench {
-      /* Example: Adjust font size for paragraphs on mobile */
       font-size: 16px;
     }
   nav ul li {
@@ -352,7 +351,7 @@ canvas {
       margin-bottom: 67px; 
     }
     #projects {
-      margin-top: 200px; /* Adjust this value to move it down */
+      margin-top: 200px; 
     }
   </style>
 </head>
@@ -555,12 +554,8 @@ canvas {
 
   const languageSwitchButton = document.getElementById("languageButton");
 languageSwitchButton.addEventListener("click", function () {
-  // Determine the language to switch to based on the currentLanguage
-  // You can add logic here to toggle between 'es' and 'fr' based on the currentLanguage
-  // For simplicity, I'll toggle between 'es' and 'fr' as an example
   const selectedLanguage = currentLanguage === 'es' ? 'fr' : 'es';
 
-  // Call the handleLanguageSwitch function to update the language
   handleLanguageSwitch(selectedLanguage);
 });
 
@@ -607,7 +602,7 @@ languageSwitchButton.addEventListener("click", function () {
     clickable: true,
   },
   mousewheel: true,
-  touch: true, // Enable touch events for swipe
+  touch: true, 
 });
 
   </script>
